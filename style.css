@@ -1,0 +1,30 @@
+img {
+    width: 100%;
+}
+
+.nav {
+    
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 200px 2 fr 1fr 300px;
+    row-gap: 30px;
+    margin: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    column-gap: 30px;
+    margin: 20px;
+}
+
+.grid-3 {
+    align-items: center;
+    align-content: center;
+}
+
+.footer {
+align-content: flex-start;
+}
