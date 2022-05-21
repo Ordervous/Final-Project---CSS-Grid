@@ -1,0 +1,14 @@
+$.ajax('https://api.adviceslip.com/advice',
+    {
+        success: function (APIResponse) {
+            let justadvice = JSON.parse(APIResponse);
+            console.log(justadvice);
+
+            let myadvice = document.getElementById("newadvice");
+            myadvice.innerHTML = justadvice.slip.advice;
+
+            // let createadvice = document.myadvice.createElement("div");
+            // createadvice.innerHTML = justadvice.slip.advice;
+            // document.body.appendChild(createadvice);
+        }
+    });
